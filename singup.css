@@ -47,7 +47,6 @@ form {
     flex-direction: column;
     margin-bottom: 30%;
     gap: 2rem;
-     
 }
 
 input[type="text"],
@@ -93,6 +92,6 @@ a:hover {
     header{
         padding-left: 15px;
         padding-right: 15px;
-      
+    
     }
 }

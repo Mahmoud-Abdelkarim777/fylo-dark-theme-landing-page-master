@@ -4,7 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --Dark-Blue : hsl(217, 28%, 15%);   /* (intro and email sign up background) */
+    --Dark-Blue-1 : hsl(216, 22%, 23%);   /* (intro and email sign up background) */
+    --Dark-Blue : hsl(218, 28%, 13%); /* (main background) */
+    --Dark-Blue-2 : hsl(218, 28%, 13%); /* (main background) */
+    --Dark-Blue : hsl(216, 53%, 9%); /* (footer background) */
+    --Dark-Blue-3 : hsl(216, 53%, 9%); /* (footer background) */
+    --Dark-Blue : hsl(219, 30%, 18%); /* (testimonials background) */
+    --Dark-Blue-4 : hsl(228, 26%, 14%); /* (testimonials background) */
+    /* ### Accent */
+    
+    --Cyan : hsl(176, 68%, 64%); /* (inside call-to-action gradient) */
+    --Blue : hsl(198, 60%, 50%); /*  (inside call-to-action gradient)*/
+    --Light-Red : hsl(0, 100%, 63%); /* (error) */
+    
+    /* ### Neutral */
+    
+    --White: hsl(0, 0%, 100%);
+    --ff-Header-Navigation: 'Raleway', sans-serif;
+    --ff-Body: 'Open Sans', sans-serif;
 
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
 /* Basic styling for the page */
 body {
     font-family: Arial, sans-serif;
@@ -15,7 +38,40 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+header{
+    display:flex ;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--Dark-Blue-1);
+}
+header .links{
+    display: flex ;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% / 4);
+    list-style-type: none;
+}
+header ul li a{
+    display: block;
+    padding: 10px 20px;
+}
 
+#a{
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--ff-Header-Navigation);
+    font-weight: var(--fw-regular);
+}
+#a:hover{
+    color: var(--White);
+    text-decoration:underline;
+    font-weight: var(--fw-bold);
+}
 .container {
     background-color: #fff;
     border-radius: 10px;
